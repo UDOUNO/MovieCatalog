@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Movie Catalog</string>
+    <string name="log_in">Войти в аккаунт</string>
+    <string name="logging">Вход в аккаунт</string>
+    <string name="sign_up">Зарегистрироваться</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="enter">Войти</string>
+    <string name="email">Электронная почта</string>
+    <string name="password_verify">Подтвердите пароль</string>
+    <string name="name">Имя</string>
+    <string name="birth_date">Дата рождения</string>
+    <string name="welcome">Добро пожаловать в MovieCatalog</string>
+    <string name="registration">Регистрация</string>
+    <string name="male">Мужчина</string>
+    <string name="female">Женщина</string>
+    <string name="watch">Смотреть</string>
+    <string name="random_film">Случайный фильм</string>
+    <string name="all">Все</string>
+    <string name="i_like">Мне нравится</string>
+    <string name="all_films">Все фильмы</string>
+    <string name="feed">Лента</string>
+    <string name="movie">Фильмы</string>
+    <string name="fav">Избранное</string>
+    <string name="profile">Профиль</string>
+    <string name="my_friends">Мои друзья</string>
+    <string name="user_information">Личная информация</string>
+    <string name="gender">Пол</string>
+    <string name="birthdate">Дата рождения</string>
+</resources>

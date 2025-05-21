@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Dark">
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foreground="@drawable/fading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/plrofile_view" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="2dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/background_image"
+        app:layout_constraintVertical_bias="0.987">
+
+        <Button
+            android:textColor="@color/White"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="35dp"
+            android:id="@+id/my_friends_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/my_friends"
+            android:background="@drawable/shape_16"
+            android:textAppearance="@style/Body"
+            />
+
+        <TextView
+            android:id="@+id/pers_inf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/user_information"
+            android:textAppearance="@style/H2"
+            android:textColor="@color/stop_gradient" />
+
+        <TextView
+            android:id="@+id/login_text_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/login"
+            android:textAppearance="@style/Regular"
+            android:textColor="@color/Gray" />
+
+        <EditText
+            android:id="@+id/login_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textAppearance="@style/Bold"
+            android:textColor="@color/Gray"
+            android:textColorHint="@color/Gray" />
+
+        <TextView
+            android:id="@+id/email_text_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/email"
+            android:textAppearance="@style/Regular"
+            android:textColor="@color/Gray" />
+
+        <EditText
+            android:id="@+id/email_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textAppearance="@style/Bold"
+            android:textColor="@color/Gray" />
+
+        <TextView
+            android:id="@+id/name_text_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/name"
+            android:textAppearance="@style/Regular"
+            android:textColor="@color/Gray" />
+
+        <EditText
+            android:id="@+id/name_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textAppearance="@style/Bold"
+            android:textColor="@color/Gray" />
+
+        <TextView
+            android:id="@+id/birthdate_text_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/birthdate"
+            android:textAppearance="@style/Regular"
+            android:textColor="@color/Gray" />
+
+        <EditText
+            android:id="@+id/birthDate_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textAppearance="@style/Bold"
+            android:textColor="@color/Gray" />
+
+        <TextView
+            android:id="@+id/sex_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/gender"
+            android:textAppearance="@style/Regular"
+            android:textColor="@color/Gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:textColor="@color/White"
+                android:text="@string/male"
+                android:textAppearance="@style/Bold" />
+
+            <Button
+                android:id="@+id/female"
+                android:textColor="@color/White"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:text="@string/female"
+                android:textAppearance="@style/Bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/avatar"
+        app:shapeAppearance="@style/avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/avatar"
+        android:background="@drawable/avatar"/>
+
+    <TextView
+        android:id="@+id/hello_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/White"
+        android:textAppearance="@style/Body"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/avatar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/greeting_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/White"
+        android:layout_marginBottom="9dp"
+        android:text="Васечка Пупкин"
+        app:layout_constraintBottom_toBottomOf="@+id/background_image"
+        app:layout_constraintStart_toEndOf="@+id/avatar"
+        app:layout_constraintTop_toBottomOf="@+id/hello_text"
+        app:layout_constraintVertical_bias="0.0"
+        android:textAppearance="@style/H1"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/logout_btn"
+        android:layout_width="40dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/shape"
+        android:foreground="@drawable/title_sign_out"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/shape">
+
+        <Button
+            android:drawableTop="@drawable/feed"
+            android:id="@+id/feed_btn"
+            android:textColor="@color/Gray_Faded"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="@string/feed"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/Footnote"
+            android:stateListAnimator="@null"
+            android:background="@drawable/shape"/>
+
+        <Button
+            android:drawableTop="@drawable/films"
+            android:id="@+id/movie_btn"
+            android:textColor="@color/Gray_Faded"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="@string/movie"
+            android:stateListAnimator="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/feed_btn"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/Footnote"
+            android:background="@drawable/shape"/>
+
+        <Button
+            android:drawableTop="@drawable/fav"
+            android:id="@+id/fav_btn"
+            android:textColor="@color/Gray_Faded"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            android:text="@string/fav"
+            android:stateListAnimator="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/movie_btn"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/Footnote"
+            android:background="@drawable/shape"/>
+
+        <Button
+            android:drawableTop="@drawable/profile_grad"
+            android:id="@+id/profile_btn"
+            android:textColor="@color/Accent"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            android:text="@string/profile"
+            android:stateListAnimator="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/fav_btn"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/Footnote"
+            android:background="@drawable/shape"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

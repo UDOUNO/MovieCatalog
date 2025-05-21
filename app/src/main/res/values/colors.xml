@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Dark">#1E1E1E</color>
+    <color name="Accent">#EF3A01</color>
+    <color name="White">#FFFFFF</color>
+    <color name="Gray">#CCCCCC</color>
+    <color name="Gray_Faded">#999999</color>
+    <color name="Dark_Faded">#333333</color>
+    <color name="start_gradient">#DF2800</color>
+    <color name="stop_gradient">#FF6633</color>
+    <color name="error">#FF0000</color>
+    <color name="empty">#00000000</color>
+</resources>

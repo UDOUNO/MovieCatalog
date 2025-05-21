@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/Dark">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="70dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/motionLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layoutDescription="@xml/swipe_scene"
+        app:layout_constraintBottom_toTopOf="@+id/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/bottomCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.246"
+            app:shapeAppearanceOverlay="@style/shape"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/topCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:shapeAppearanceOverlay="@style/shape"
+            tools:layout_editor_absoluteY="-47dp" />
+
+        <ImageView
+            android:id="@+id/likeIcon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/like" />
+
+        <ImageView
+            android:id="@+id/passIcon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/dis_like" />
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/H1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:textColor="@color/White"
+        app:layout_constraintBottom_toTopOf="@+id/country_year"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/country_year"
+        style="@style/Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/Gray"
+        app:layout_constraintBottom_toTopOf="@+id/chipGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:singleLine="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip1"
+            style="@style/Body"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape"
+            android:textColor="@color/White"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip2"
+            style="@style/Body"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape"
+            android:textColor="@color/White"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip3"
+            style="@style/Body"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape"
+            android:textColor="@color/White"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/shape">
+
+        <Button
+            android:drawableTop="@drawable/feed_grad"
+            android:id="@+id/feed_btn"
+            android:textColor="@color/Accent"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="@string/feed"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/Footnote"
+            android:stateListAnimator="@null"
+            android:background="@drawable/shape"/>
+
+        <Button
+            android:drawableTop="@drawable/films"
+            android:id="@+id/movie_btn"
+            android:textColor="@color/Gray_Faded"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="@string/movie"
+            android:stateListAnimator="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/feed_btn"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/Footnote"
+            android:background="@drawable/shape"/>
+
+        <Button
+            android:drawableTop="@drawable/fav"
+            android:id="@+id/fav_btn"
+            android:textColor="@color/Gray_Faded"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            android:text="@string/fav"
+            android:stateListAnimator="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/movie_btn"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/Footnote"
+            android:background="@drawable/shape"/>
+
+        <Button
+            android:drawableTop="@drawable/profile"
+            android:id="@+id/profile_btn"
+            android:textColor="@color/Gray_Faded"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            android:text="@string/profile"
+            android:stateListAnimator="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/fav_btn"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/Footnote"
+            android:background="@drawable/shape"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
